@@ -34,22 +34,24 @@ public class playerBox : MonoBehaviour {
         scoreText.text = "Score: " + score.ToString();
 
 
-        if (stop == false)
-        {
+        //if (stop == false)
+        //{
            
-            cam.transform.position = new Vector3(rb.transform.position.x + 1.0f, cam.transform.position.y, cam.transform.position.z);
+        //    cam.transform.position = new Vector3(rb.transform.position.x + 1.0f, cam.transform.position.y, cam.transform.position.z);
 
-            if (Input.GetMouseButtonUp(0)&&jump==true)
-            {
-                rb.AddForce(new Vector3(0.0f, 3.0f, 0.0f) * 2.5f, ForceMode.Impulse);
-                jump = false;
-            }
+        //    if (Input.GetMouseButtonUp(0)&&jump==true)
+        //    {
+        //        rb.AddForce(new Vector3(0.0f, 3.0f, 0.0f) * 2.5f, ForceMode.Impulse);
+        //        jump = false;
+        //    }
 
-        }
-        else
-        {
-            cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
-        }
+        //}
+        //else
+        //{
+        //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        //}
+
+        cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
 
         endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y,endScreen.transform.position.z);
 
