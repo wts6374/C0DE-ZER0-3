@@ -19,6 +19,18 @@ public class TapJump : MonoBehaviour {
 
     void TouchInput()
     {
+        if(Input.GetMouseButtonDown(0))
+        {
+            // reverse gravity
+            Physics.gravity = -(Physics.gravity);
+            // zero out velocity
+            this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            // adds impulse force to increase speed of switching
+            this.GetComponent<Rigidbody>().AddForce(impulseForce, ForceMode.Impulse);
+            // reverse force for next gravity switch
+            impulseForce = -impulseForce;
+        }
+
         // checks for touch input
         foreach (Touch touch in Input.touches)
         {
