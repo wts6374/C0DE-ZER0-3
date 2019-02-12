@@ -10,7 +10,7 @@ public class playerBox : MonoBehaviour {
    public bool stop = false;
     public Camera cam;
    public Rigidbody rb;
-  public int score;
+  public float score;
 
     public Text scoreText;
     public Text winText;
@@ -82,9 +82,18 @@ public class playerBox : MonoBehaviour {
         if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
-            score += 100;
+
+            //plus 40 to score if you pick up a coin
+            score += 40;
         }
+        
     }
 
-
+    //fixed update makes score incrment every second by 1
+    void FixedUpdate()
+    {
+        score += 1;
+    }
 }
+
+
