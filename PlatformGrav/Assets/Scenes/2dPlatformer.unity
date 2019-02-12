@@ -5794,6 +5794,7 @@ GameObject:
   - component: {fileID: 1255718384}
   - component: {fileID: 1255718388}
   - component: {fileID: 1255718389}
+  - component: {fileID: 1255718390}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5902,6 +5903,17 @@ MonoBehaviour:
   scoreText: {fileID: 1166020878}
   winText: {fileID: 18765432}
   endScreen: {fileID: 657894979}
+--- !u!114 &1255718390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255718383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309257d0bf40b9545be841977d6e69fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1271573924
 GameObject:
   m_ObjectHideFlags: 0
