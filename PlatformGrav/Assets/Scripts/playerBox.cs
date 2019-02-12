@@ -36,7 +36,7 @@ public class playerBox : MonoBehaviour {
 
         //if (stop == false)
         //{
-           
+
         //    cam.transform.position = new Vector3(rb.transform.position.x + 1.0f, cam.transform.position.y, cam.transform.position.z);
 
         //    if (Input.GetMouseButtonUp(0)&&jump==true)
@@ -51,7 +51,7 @@ public class playerBox : MonoBehaviour {
         //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
         //}
 
-        cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        cam.transform.position = new Vector3(this.transform.position.x + 5, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
 
         endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y,endScreen.transform.position.z);
 
