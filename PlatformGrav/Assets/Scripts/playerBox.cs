@@ -19,7 +19,7 @@ public class playerBox : MonoBehaviour {
 
     void Start () {
         score = 0;
-
+        //Camera.main.transform.position.x = gameObject.transform.position.x + 2;
         stop = false;
         jump = false;
 
@@ -51,7 +51,7 @@ public class playerBox : MonoBehaviour {
         //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
         //}
 
-        cam.transform.position = new Vector3(this.transform.position.x + 5, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        cam.transform.position = new Vector3(this.transform.position.x, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
 
         endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y,endScreen.transform.position.z);
 
