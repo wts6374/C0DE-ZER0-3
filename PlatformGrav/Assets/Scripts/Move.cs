@@ -12,9 +12,13 @@ public class Move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (stop == false)
+  
+            transform.Translate(Vector3.left * 20 * Time.deltaTime);
+
+        if(transform.position.x<=-200f)
         {
-            transform.Translate(Vector3.left * 5 * Time.deltaTime);
+            transform.position = new Vector3(575f, transform.position.y, transform.position.z);
         }
+  
     }
 }
