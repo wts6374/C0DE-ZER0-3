@@ -12,8 +12,10 @@ public class playerBox : MonoBehaviour {
    public Rigidbody rb;
   public float score;
 
-    public Text scoreText;
+    // public Text scoreText;
     public Text winText;
+
+    public MySceneManager mySceneManager;
 
     public GameObject endScreen;
 
@@ -25,13 +27,15 @@ public class playerBox : MonoBehaviour {
 
         winText.text = "";
 
+
+
         endScreen.SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        scoreText.text = "Score: " + score.ToString();
+        
 
 
         //if (stop == false)
@@ -86,16 +90,14 @@ public class playerBox : MonoBehaviour {
             Destroy(other.gameObject);
 
             //plus 40 to score if you pick up a coin
-            score += 40;
+            //mySceneManager.score += 10f;
+            mySceneManager.score += 10f;
+            //mySceneManager.score += 10f;
         }
         
     }
 
-    //fixed update makes score incrment every second by 1
-    void FixedUpdate()
-    {
-        score += 1;
-    }
+   
 }
 
 

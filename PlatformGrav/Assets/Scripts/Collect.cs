@@ -21,7 +21,8 @@ public class Collect : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.gameObject.GetComponent<playerBox>().score += 40;
+            //other.gameObject.gameObject.GetComponent<playerBox>().score += 40;
+            MySceneManager.Instance.multiplier += .1f;
             Destroy(gameObject);
         }
     }
