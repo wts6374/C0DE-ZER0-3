@@ -31,7 +31,7 @@ public class playerBox : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        scoreText.text = "Score: " + score.ToString();
+        //scoreText.text = "Score: " + score.ToString();
 
 
         //if (stop == false)
@@ -86,7 +86,7 @@ public class playerBox : MonoBehaviour {
             Destroy(other.gameObject);
 
             //plus 40 to score if you pick up a coin
-            score += 40;
+            //score += 40;
         }
         
     }
@@ -94,7 +94,7 @@ public class playerBox : MonoBehaviour {
     //fixed update makes score incrment every second by 1
     void FixedUpdate()
     {
-        score += 1;
+        MySceneManager.Instance.score += .05f;
     }
 }
 
