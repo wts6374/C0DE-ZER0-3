@@ -12,20 +12,17 @@ public class MySceneManager : Singleton<MySceneManager> {
 
 	// Use this for initialization
 	void Start () {
-        displayScore = 0;
+        //DontDestroyOnLoad(this);
+        //displayScore = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        displayScore = (int)score;
+        //displayScore = (int)score;
         //int displayMultiplier = (int)(multiplier * 100);
         
-        scoreText.text = "Score: " + (int)score + "\nMultiplier: " + (int)multiplier;
+        //scoreText.text = "Score: " + (int)score + "\nMultiplier: " + (int)multiplier;
     }
 
-    //fixed update makes score incrment every second by 1
-    void FixedUpdate()
-    {
-        score += .05f * multiplier;
-    }
+   
 }

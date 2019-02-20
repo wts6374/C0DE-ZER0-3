@@ -63,9 +63,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Collect.cs" />
     <Compile Include="Assets\Scripts\loopThings.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\MySceneManager.cs" />
     <Compile Include="Assets\Scripts\playerBox.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\TapJump.cs" />
     <Reference Include="UnityEditor.StandardEvents">
@@ -265,9 +267,6 @@
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
