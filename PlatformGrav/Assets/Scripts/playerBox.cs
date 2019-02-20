@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class playerBox : MonoBehaviour {
 
@@ -72,11 +73,12 @@ public class playerBox : MonoBehaviour {
 
         if (other.gameObject.tag == "Spike")
         {
-            stop = true;
+            /*stop = true;
             winText.color = Color.red;
             winText.text = "You Lose";
             Destroy(rb.gameObject);
-            endScreen.SetActive(true);
+            endScreen.SetActive(true);*/
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
 
         if (other.gameObject.tag == "Coin")
