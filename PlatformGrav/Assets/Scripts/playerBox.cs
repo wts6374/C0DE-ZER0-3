@@ -79,7 +79,10 @@ public class playerBox : MonoBehaviour {
             //winText.text = "You Lose";
             //Destroy(rb.gameObject);
             //endScreen.SetActive(true);
-
+            MySceneManager.Instance.coins = 0;
+            MySceneManager.Instance.score = 0;
+            MySceneManager.Instance.multiplier = 0;
+            Physics.gravity = new Vector3(0, -9.81f, 0);
             this.GetComponent<MainMenu>().Menuetwo();
         }
 
@@ -87,7 +90,8 @@ public class playerBox : MonoBehaviour {
 
         if (other.gameObject.tag == "Coin")
         {
-            Destroy(other.gameObject);
+            
+            //Destroy(other.gameObject);
 
             //plus 40 to score if you pick up a coin
             //score += 40;

@@ -23,7 +23,7 @@ public class Collect : MonoBehaviour
         {
             other.gameObject.gameObject.GetComponent<playerBox>().score += 40;
             MySceneManager.Instance.multiplier += .1f;
-            
+            MySceneManager.Instance.coins++;
             Debug.Log(gameObject.tag);
             if (gameObject.tag == "SlowAbility")
             {

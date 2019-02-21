@@ -52,6 +52,7 @@ public class TapJump : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //impulseForce = new Vector3(0.0f, 5.0f, 0.0f) * 2.0f;
             // reverse gravity
             Physics.gravity = -(Physics.gravity);
             // zero out velocity
