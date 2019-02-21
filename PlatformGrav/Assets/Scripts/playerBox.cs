@@ -72,13 +72,15 @@ public class playerBox : MonoBehaviour {
             endScreen.SetActive(true);
         }
 
-        if (other.gameObject.tag == "Spike")
+		if (other.gameObject.name.Contains("Spike"))
         {
-            stop = true;
-            winText.color = Color.red;
-            winText.text = "You Lose";
-            Destroy(rb.gameObject);
-            endScreen.SetActive(true);
+            //stop = true;
+            //winText.color = Color.red;
+            //winText.text = "You Lose";
+            //Destroy(rb.gameObject);
+            //endScreen.SetActive(true);
+
+            this.GetComponent<MainMenu>().Menuetwo();
         }
 
         if (other.gameObject.tag == "Coin")
