@@ -12,8 +12,7 @@ public class MySceneManager : Singleton<MySceneManager> {
 
 	// Use this for initialization
 	void Start () {
-        //DontDestroyOnLoad(this);
-        //displayScore = 0;
+        //scoreText.
 	}
 	
 	// Update is called once per frame

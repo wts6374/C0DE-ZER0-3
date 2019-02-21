@@ -83,6 +83,8 @@ public class playerBox : MonoBehaviour {
             this.GetComponent<MainMenu>().Menuetwo();
         }
 
+     
+
         if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
@@ -90,7 +92,12 @@ public class playerBox : MonoBehaviour {
             //plus 40 to score if you pick up a coin
             //score += 40;
         }
-        
+
+        if (other.gameObject.tag == "SlowAbility")
+        {
+           
+        }
+
     }
 
     //fixed update makes score incrment every second by 1

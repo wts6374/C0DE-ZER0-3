@@ -6,14 +6,22 @@ public class Move : MonoBehaviour {
 
     // Use this for initialization
     public bool stop;
+    public static float SPEED;
+    public float speed;
 	void Start () {
+        if (SPEED == 0)
+        {
+            SPEED = 20f;
+        }
 
+        speed = SPEED;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-  
-            transform.Translate(Vector3.left * 20 * Time.deltaTime);
+
+        speed = SPEED;
+        transform.Translate(Vector3.left * SPEED * Time.deltaTime);
 
         if(transform.position.x<=-200f)
         {

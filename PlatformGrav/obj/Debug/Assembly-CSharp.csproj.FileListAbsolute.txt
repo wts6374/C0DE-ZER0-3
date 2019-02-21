@@ -336,3 +336,5 @@ C:\Users\Tyler\Documents\GitHub\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSha
 C:\Users\Tyler\Documents\GitHub\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Tyler\Documents\GitHub\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.dll
 C:\Users\Tyler\Documents\GitHub\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Tyler\Documents\GitHub\C0DE-ZER0-3\PlatformGrav\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+C:\Users\Tyler\Documents\GitHub\C0DE-ZER0-3\PlatformGrav\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml
