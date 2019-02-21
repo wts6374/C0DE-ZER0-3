@@ -6,9 +6,11 @@ public class loopThings : MonoBehaviour {
 
     public float fTimer = 0.2f;
     public Transform coin;
+    public Transform spike;
+    public Transform slow;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,11 +19,26 @@ public class loopThings : MonoBehaviour {
 
         //Will spawn in a new coin or obstacle constantly
         fTimer -= Time.deltaTime;
-        if(fTimer<=0.0f)
+        int change = Random.Range(0, 12);
+
+        if (fTimer<=0.0f)
         {
             fTimer = 0.2f;
-            Vector3 pos = new Vector3(500, Random.Range(-6, 11), -0.19f);
-            Instantiate(coin, pos, Quaternion.identity);
+            if (change >= 9 && change<=11)
+            {
+                Vector3 pos = new Vector3(200, Random.Range(-5, 10), -0.19f);
+                Instantiate(spike, pos, Quaternion.identity);
+            }
+            else if(change>=12)
+            {
+                Vector3 pos = new Vector3(200, Random.Range(-5, 10), -0.19f);
+                Instantiate(slow, pos, Quaternion.identity);
+            }
+            else
+            {
+                Vector3 pos = new Vector3(200, Random.Range(-6, 11), -0.19f);
+                Instantiate(coin, pos, Quaternion.identity);
+            }
         }
 	}
 

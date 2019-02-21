@@ -6449,6 +6449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fTimer: 0.2
   coin: {fileID: 4622854187093438, guid: e99e320059b3bb84384ea5782c2b0e35, type: 2}
+  spike: {fileID: 4803295195223576, guid: ad2cb1e1f02faa141b478c3663910bb5, type: 2}
+  slow: {fileID: 4759760710194172, guid: d51c2da9059201147899bb715bda4771, type: 2}
 --- !u!65 &1295703809
 BoxCollider:
   m_ObjectHideFlags: 0
