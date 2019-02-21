@@ -14,7 +14,7 @@ public class playerBox : MonoBehaviour {
 	public bool magnet = false;
     public Text scoreText;
     public Text winText;
-
+	public float timer =0.0f;
     public GameObject endScreen;
 
     void Start () {
@@ -30,6 +30,9 @@ public class playerBox : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	
+
 		RaycastHit hit;
 		if (magnet == true) {
 			if(Physics.SphereCast(transform.position, 10, Vector3.right, out hit, 10)){
@@ -37,6 +40,11 @@ public class playerBox : MonoBehaviour {
 					Destroy (hit.transform.gameObject);
 					Debug.Log ("coin");
 				}
+			}
+			timer += Time.deltaTime;
+			if (timer > 10.0f) {
+				magnet = false;
+				timer = 0;
 			}
 		}
 
