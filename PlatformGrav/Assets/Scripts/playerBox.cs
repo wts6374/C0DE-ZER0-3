@@ -11,7 +11,7 @@ public class playerBox : MonoBehaviour {
     public Camera cam;
    public Rigidbody rb;
   public float score;
-
+	public bool magnet = false;
     public Text scoreText;
     public Text winText;
 
@@ -22,7 +22,7 @@ public class playerBox : MonoBehaviour {
         //Camera.main.transform.position.x = gameObject.transform.position.x + 2;
         stop = false;
         jump = false;
-
+		//magnet = true;
         winText.text = "";
 
         endScreen.SetActive(false);
@@ -30,6 +30,15 @@ public class playerBox : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		RaycastHit hit;
+		if (magnet == true) {
+			if(Physics.SphereCast(transform.position, 10, Vector3.right, out hit, 10)){
+				if(hit.transform.name.Contains("Coin")){
+					Destroy (hit.transform.gameObject);
+					Debug.Log ("coin");
+				}
+			}
+		}
 
         //scoreText.text = "Score: " + score.ToString();
 
@@ -90,6 +99,11 @@ public class playerBox : MonoBehaviour {
             //plus 40 to score if you pick up a coin
             //score += 40;
         }
+
+		if (other.gameObject.name == "mag") {
+			Destroy (other.gameObject);
+			magnet = true;
+		}
         
     }
 
