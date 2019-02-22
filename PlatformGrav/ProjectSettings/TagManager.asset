@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Spike
   - SlowAbility
+  - GroundNew
+  - Mag
   layers:
   - Default
   - TransparentFX
