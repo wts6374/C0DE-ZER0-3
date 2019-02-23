@@ -16,49 +16,50 @@ public class loopThings : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        xPos = new int[40];
+        xPos = new int[25];
 
         xPos[0] = 550;
-        xPos[1] = 600;
-        xPos[2] = 650;
-        xPos[3] = 700;
-        xPos[4] = 750;
-        xPos[5] = 800;
-        xPos[6] = 850;
-        xPos[7] = 900;
-        xPos[8] = 950;
-        xPos[9] = 1000;
-        xPos[10] = 500;
-        xPos[11] = 450;
-        xPos[12] = 400;
-        xPos[13] = 300;
-        xPos[14] = 350;
-        xPos[15] = 200;
-        xPos[16] = 250;
-        xPos[17] = 100;
-        xPos[18] = 150;
-        xPos[19] = 60;
+ 
+        xPos[1] = 650;
 
-        xPos[0] = 1050;
-        xPos[1] = 1100;
-        xPos[2] = 1150;
-        xPos[3] = 1200;
-        xPos[4] = 1250;
-        xPos[5] = 1300;
-        xPos[6] = 1350;
-        xPos[7] = 1400;
-        xPos[8] = 1450;
-        xPos[9] = 1500;
-        xPos[10] = 1550;
-        xPos[11] = 1650;
-        xPos[12] = 2400;
-        xPos[13] = 2300;
-        xPos[14] = 2350;
-        xPos[15] = 2200;
-        xPos[16] = 2000;
-        xPos[17] = 3000;
-        xPos[18] = 3500;
-        xPos[19] = 4000;
+        xPos[2] = 750;
+
+        xPos[3] = 850;
+ 
+        xPos[4] = 950;
+
+        xPos[5] = 500;
+
+        xPos[6] = 400;
+ 
+        xPos[7] = 350;
+   
+        xPos[8] = 250;
+
+        xPos[9] = 150;
+
+        xPos[10] = 60;
+
+        xPos[11] = 1050;
+        xPos[12] = 1100;
+
+        xPos[13] = 1200;
+        xPos[14] = 1250;
+        xPos[15] = 1300;
+        xPos[16] = 1350;
+        xPos[17] = 1400;
+        xPos[18] = 1450;
+        xPos[19] = 1500;
+        xPos[20] = 1550;
+        xPos[21] = 1650;
+
+
+        xPos[22] = 2350;
+
+
+        xPos[23] = 3000;
+
+        xPos[24] = 4000;
     }
 	
 	// Update is called once per frame
