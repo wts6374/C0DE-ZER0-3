@@ -9,10 +9,6 @@ public class loopThings : MonoBehaviour {
     public Transform spike;
     public Transform slow;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {

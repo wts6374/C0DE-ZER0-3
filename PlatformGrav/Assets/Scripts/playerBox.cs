@@ -106,6 +106,8 @@ public class playerBox : MonoBehaviour
             MySceneManager.Instance.score = 0;
             MySceneManager.Instance.multiplier = 0;
             MySceneManager.Instance.multiplier = 0;
+            Physics.gravity = new Vector3(0, -9.81f, 0);
+            //GetComponent<TapJump>().impulseForce = new Vector3(0.0f, 5.0f, 0.0f) * 2.0f;
             this.GetComponent<MainMenu>().Menuetwo();
         }
 

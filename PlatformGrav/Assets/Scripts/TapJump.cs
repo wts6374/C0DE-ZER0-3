@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TapJump : MonoBehaviour {
  
-    Vector3 impulseForce;
+    public Vector3 impulseForce;
     GameObject player;
 
 	// Use this for initialization
@@ -12,6 +12,7 @@ public class TapJump : MonoBehaviour {
         // sets force for impulse
         impulseForce = new Vector3(0.0f, 5.0f, 0.0f) * 2.0f;
         player = GameObject.Find("Player");
+        Physics.gravity = new Vector3(0, -25, 0);
     }
 	
 	// Update is called once per frame
@@ -40,7 +41,7 @@ public class TapJump : MonoBehaviour {
                     // zero out velocity
                     player.GetComponent<Rigidbody>().velocity = Vector3.zero;
                     // adds impulse force to increase speed of switching
-                    player.GetComponent<Rigidbody>().AddForce(impulseForce, ForceMode.Impulse);
+                    //player.GetComponent<Rigidbody>().AddForce(impulseForce, ForceMode.Impulse);
                     // reverse force for next gravity switch
                     impulseForce = -impulseForce;
                 }
