@@ -70,33 +70,33 @@ public class loopThings : MonoBehaviour {
 
         if (create==true)
         {
-            for (int i = 0; i < xPos.Length; i++)
+            for (int i = 0; i < 50; i++)
             {
                 int change = Random.Range(0, 30);
                 if (change >= 13 && change <= 15)
                 {
-                        Vector3 pos = new Vector3(i, Random.Range(-5, 10), -0.19f);
+                        Vector3 pos = new Vector3(Random.Range(0,200), Random.Range(-5, 10), -0.19f);
                         Instantiate(spike, pos, Quaternion.identity);
                 }
                 if (change == 18)
                 {
-                    Vector3 pos = new Vector3(i, Random.Range(-5, 10), -0.19f);
+                    Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-5, 10), -0.19f);
                     Instantiate(mag, pos, Quaternion.identity);
                 }
                 else if (change >= 19&&change<=21)
                 {
-                    Vector3 pos = new Vector3(i, Random.Range(-5, 10), -0.19f);
+                    Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-5, 10), -0.19f);
                     Instantiate(slow, pos, Quaternion.identity);
                 }
                 else if (change >= 8 && change <= 12)
                 {
-                    Vector3 pos = new Vector3(i, Random.Range(-1, 7), -0.19f);
+                    Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-1, 7), -0.19f);
                     Instantiate(ground, pos, Quaternion.identity);
                 }
                 else
                 {
 
-                 Vector3 pos = new Vector3(i, Random.Range(-6, 11), -0.19f);
+                 Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-6, 11), -0.19f);
                  Instantiate(coin, pos, Quaternion.identity);
                 }
             }

@@ -28,6 +28,7 @@ public class playerBox : MonoBehaviour
         winText.text = "";
 
         endScreen.SetActive(false);
+        Physics.gravity = new Vector3(0, -50, 0);
     }
 
     // Update is called once per frame
@@ -104,8 +105,9 @@ public class playerBox : MonoBehaviour
             //Destroy(rb.gameObject);
             //endScreen.SetActive(true);
             MySceneManager.Instance.score = 0;
+            MySceneManager.Instance.coins = 0;
             MySceneManager.Instance.multiplier = 0;
-            MySceneManager.Instance.multiplier = 0;
+            //Physics.gravity = new Vector3(0, -50, 0);
             this.GetComponent<MainMenu>().Menuetwo();
         }
 
