@@ -73,16 +73,16 @@
     <Compile Include="Assets\Scripts\SlowDown.cs" />
     <Compile Include="Assets\Scripts\TapJump.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityMoe/PlatformGrav/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityJoe/PlatformGrav/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityMoe/PlatformGrav/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityJoe/PlatformGrav/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityMoe/PlatformGrav/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityJoe/PlatformGrav/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityMoe/PlatformGrav/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Elliot Privateer/Desktop/Repositories/GravityJoe/PlatformGrav/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity_2018.2.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
