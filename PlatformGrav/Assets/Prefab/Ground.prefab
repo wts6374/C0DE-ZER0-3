@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114001253959022918}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Ground
+  m_TagString: GroundNew
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +110,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stop: 0
   speed: 0
+  createThings: {fileID: 0}

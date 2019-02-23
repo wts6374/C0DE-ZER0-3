@@ -28,6 +28,7 @@ public class playerBox : MonoBehaviour
         winText.text = "";
 
         endScreen.SetActive(false);
+        Physics.gravity = new Vector3(0, -50, 0);
     }
 
     // Update is called once per frame
@@ -75,7 +76,7 @@ public class playerBox : MonoBehaviour
         //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
         //}
 
-        cam.transform.position = new Vector3(this.transform.position.x, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        cam.transform.position = new Vector3(this.transform.position.x+15, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
 
         endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, endScreen.transform.position.z);
 
@@ -104,10 +105,9 @@ public class playerBox : MonoBehaviour
             //Destroy(rb.gameObject);
             //endScreen.SetActive(true);
             MySceneManager.Instance.score = 0;
+            MySceneManager.Instance.coins = 0;
             MySceneManager.Instance.multiplier = 0;
-            MySceneManager.Instance.multiplier = 0;
-            Physics.gravity = new Vector3(0, -9.81f, 0);
-            //GetComponent<TapJump>().impulseForce = new Vector3(0.0f, 5.0f, 0.0f) * 2.0f;
+            //Physics.gravity = new Vector3(0, -50, 0);
             this.GetComponent<MainMenu>().Menuetwo();
         }
 
