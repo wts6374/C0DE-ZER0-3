@@ -344,7 +344,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 911869325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3c65553f8189ba4b933262809cbdc6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 35e4ca3acb9d9234085c8355d1a0155c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1106048916
@@ -656,8 +656,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1973124333}
-        m_MethodName: Menu
+      - m_Target: {fileID: 911869329}
+        m_MethodName: BacktooMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

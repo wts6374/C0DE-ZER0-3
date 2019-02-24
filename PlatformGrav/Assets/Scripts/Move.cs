@@ -18,6 +18,7 @@ public class Move : MonoBehaviour {
         }
 
         speed = SPEED;
+        createThings = GameObject.Find("TriggerLoop");
 	}
 	
 	// Update is called once per frame
@@ -32,5 +33,16 @@ public class Move : MonoBehaviour {
             createThings.gameObject.GetComponent<loopThings>().create = true;
         }
   
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (this.gameObject.tag == "Spike")
+        {
+            if (other.GetComponent<playerBox>())
+            {
+                GameObject ending = GameObject.Find("Player");
+                ending.GetComponent<Menu>().Menuetwo();
+            }
+        }
     }
 }

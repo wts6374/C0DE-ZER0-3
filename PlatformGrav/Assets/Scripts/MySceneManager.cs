@@ -24,6 +24,10 @@ public class MySceneManager : Singleton<MySceneManager> {
         
         //scoreText.text = "Score: " + (int)score + "\nMultiplier: " + (int)multiplier;
     }
+    public void scoretransfer()
+    {
+
+    }
 
    
 }

@@ -510,3 +510,7 @@ Z:\IGMProfile\Desktop\repos\GravityMoe\PlatformGrav\obj\Debug\Assembly-CSharp.cs
 Z:\IGMProfile\Desktop\repos\GravityMoe\PlatformGrav\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 Z:\IGMProfile\Desktop\repos\GravityMoe\PlatformGrav\obj\Debug\Assembly-CSharp.dll
 Z:\IGMProfile\Desktop\repos\GravityMoe\PlatformGrav\obj\Debug\Assembly-CSharp.pdb
+Z:\IGMProfile\Documents\C0de_Z0re\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+Z:\IGMProfile\Documents\C0de_Z0re\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+Z:\IGMProfile\Documents\C0de_Z0re\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.dll
+Z:\IGMProfile\Documents\C0de_Z0re\C0DE-ZER0-3\PlatformGrav\obj\Debug\Assembly-CSharp.pdb

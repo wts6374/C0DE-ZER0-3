@@ -97,7 +97,7 @@ public class playerBox : MonoBehaviour
             endScreen.SetActive(true);
         }
 
-        if (other.gameObject.name.Contains("Spike"))
+        if (other.gameObject.tag == "Spike")
         {
             //stop = true;
             //winText.color = Color.red;
@@ -108,7 +108,8 @@ public class playerBox : MonoBehaviour
             MySceneManager.Instance.coins = 0;
             MySceneManager.Instance.multiplier = 0;
             //Physics.gravity = new Vector3(0, -50, 0);
-            this.GetComponent<MainMenu>().Menuetwo();
+            this.gameObject.GetComponent<Menu>().Menuetwo();
+            //this.GetComponent<Menu>().Menuetwo();
         }
 
         if (other.gameObject.tag == "Coin")
