@@ -104,6 +104,7 @@ public class playerBox : MonoBehaviour
             //winText.text = "You Lose";
             //Destroy(rb.gameObject);
             //endScreen.SetActive(true);
+            MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
             MySceneManager.Instance.score = 0;
             MySceneManager.Instance.coins = 0;
             MySceneManager.Instance.multiplier = 0;
