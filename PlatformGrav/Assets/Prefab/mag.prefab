@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4905885059335990}
   - component: {fileID: 33515586991786264}
   - component: {fileID: 23383404396510846}
-  - component: {fileID: 135065263455551132}
   - component: {fileID: 114296882253817770}
+  - component: {fileID: 58238436498964436}
   m_Layer: 0
   m_Name: mag
   m_TagString: Mag
@@ -85,6 +85,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1957704952909282}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!58 &58238436498964436
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1957704952909282}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &114296882253817770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,16 +113,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stop: 0
   speed: 0
-  createThings: {fileID: 0}
---- !u!135 &135065263455551132
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1957704952909282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}

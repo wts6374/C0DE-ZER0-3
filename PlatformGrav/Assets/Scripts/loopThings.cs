@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class loopThings : MonoBehaviour {
 
-    public bool create = false;
+    public float fTimer = 2.0f;
     public Transform coin;
     public Transform spike;
     public Transform slow;
     public Transform mag;
     public Transform ground;
 
-    public int[] xPos;
+    public float[] xPos;
 
     // Use this for initialization
     void Start () {
 
-        xPos = new int[25];
+        xPos = new float[6];
 
-        xPos[0] = 550;
+        xPos[0] = gameObject.transform.position.x;
  
-        xPos[1] = 650;
+        xPos[1] = gameObject.transform.position.x+350;
 
-        xPos[2] = 750;
+        xPos[2] = gameObject.transform.position.x-350;
 
-        xPos[3] = 850;
+        xPos[3] = gameObject.transform.position.x+700;
  
-        xPos[4] = 950;
+        xPos[4] = gameObject.transform.position.x-700;
 
-        xPos[5] = 500;
+        xPos[5] = gameObject.transform.position.x+800;
 
-        xPos[6] = 400;
+      /* xPos[6] = 400;
  
         xPos[7] = 350;
    
@@ -59,64 +59,52 @@ public class loopThings : MonoBehaviour {
 
         xPos[23] = 3000;
 
-        xPos[24] = 4000;
+        xPos[24] = 4000;*/
     }
 	
 	// Update is called once per frame
 	void Update () {
 
         //Will spawn in a new coin or obstacle constantly
-        
+        fTimer -= 0.1f;
 
-        if (create==true)
+        if (fTimer<=0.0f)
         {
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < xPos.Length; i++)
             {
                 int change = Random.Range(0, 30);
                 if (change >= 13 && change <= 15)
                 {
-                        Vector3 pos = new Vector3(Random.Range(0,200), Random.Range(-5, 10), -0.19f);
+                        Vector3 pos = new Vector3(xPos[i], Random.Range(gameObject.transform.position.y-3, gameObject.transform.position.y+3), 0f);
                         Instantiate(spike, pos, Quaternion.identity);
                 }
                 if (change == 18)
                 {
-                    Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-5, 10), -0.19f);
+                    Vector3 pos = new Vector3(xPos[i], Random.Range(gameObject.transform.position.y - 3, gameObject.transform.position.y + 3), 0f);
                     Instantiate(mag, pos, Quaternion.identity);
                 }
                 else if (change >= 19&&change<=21)
                 {
-                    Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-5, 10), -0.19f);
+                    Vector3 pos = new Vector3(xPos[i], Random.Range(gameObject.transform.position.y - 3, gameObject.transform.position.y + 3), 0f);
                     Instantiate(slow, pos, Quaternion.identity);
                 }
                 else if (change >= 8 && change <= 12)
                 {
-                    Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-1, 7), -0.19f);
+                    Vector3 pos = new Vector3(xPos[i], Random.Range(gameObject.transform.position.y - 3, gameObject.transform.position.y + 3), 0f);
                     Instantiate(ground, pos, Quaternion.identity);
                 }
                 else
                 {
-
-                 Vector3 pos = new Vector3(Random.Range(0, 200), Random.Range(-6, 11), -0.19f);
-                 Instantiate(coin, pos, Quaternion.identity);
+                    Vector3 pos = new Vector3(xPos[i], Random.Range(gameObject.transform.position.y - 3, gameObject.transform.position.y + 3), 0f);
+                    Instantiate(coin, pos, Quaternion.identity);
                 }
             }
 
-            create = false;
+            fTimer = 3.0f;
         }
+
+
 	}
 
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            other.transform.position = new Vector3(545, other.transform.position.y, other.transform.position.z);
-        }
-
-       else if (other.gameObject.tag == "Coin"|| other.gameObject.tag == "Spike"|| other.gameObject.tag == "SlowAbility"|| other.gameObject.tag == "Mag"|| other.gameObject.tag == "GroundNew")
-        {
-            Destroy(other.gameObject);
-        }
-
-    }
 }
