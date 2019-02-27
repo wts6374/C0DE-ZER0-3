@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\MySceneManager.cs" />
+    <Compile Include="Assets\Scripts\New_CreateLoop_Objects\Loop.cs" />
+    <Compile Include="Assets\Scripts\New_CreateLoop_Objects\SpawnObjects.cs" />
     <Compile Include="Assets\Scripts\playerBox.cs" />
     <Compile Include="Assets\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />

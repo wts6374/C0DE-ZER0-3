@@ -26,11 +26,11 @@ public class Move : MonoBehaviour {
         speed = SPEED;
         transform.Translate(Vector3.left * SPEED * Time.deltaTime);
 
-        if(transform.position.x<=-220f)
-        {
-            transform.position = new Vector3(545f, transform.position.y, transform.position.z);
-            createThings.gameObject.GetComponent<loopThings>().create = true;
-        }
+        //if(transform.position.x<=-220f)
+        //{
+        //    transform.position = new Vector3(545f, transform.position.y, transform.position.z);
+        //    createThings.gameObject.GetComponent<loopThings>().create = true;
+        //}
   
     }
 }
