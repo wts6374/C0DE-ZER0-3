@@ -19,6 +19,7 @@ public class SlowDown : PowerUp {
             Move.SPEED = 20f;
             //Destroy(gameObject);
             isActive = !isActive;
+            Destroy(this);
 
         }
       

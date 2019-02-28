@@ -39,7 +39,7 @@ public class TapJump : MonoBehaviour {
 
     public void ClickInput()
     {
-        Debug.Log("CLICK ENTER");
+        //Debug.Log("CLICK ENTER");
 
         // reverse gravity
         Physics2D.gravity = -(Physics2D.gravity);
