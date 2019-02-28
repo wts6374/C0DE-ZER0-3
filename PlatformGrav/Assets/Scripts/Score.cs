@@ -13,7 +13,7 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.GetComponent<Text>().text = "Score: " + (int)MySceneManager.Instance.score + "\nMultiplier: " + (int)MySceneManager.Instance.multiplier;
+        GetComponent<Text>().text = "Score: " + (int)MySceneManager.Instance.score + "\nMultiplier: " + (int)MySceneManager.Instance.multiplier + "\nCoins: " + MySceneManager.Instance.coins;
     }
 
     //fixed update makes score incrment every second by 1

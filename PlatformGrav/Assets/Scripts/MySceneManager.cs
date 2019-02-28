@@ -9,11 +9,12 @@ public class MySceneManager : Singleton<MySceneManager> {
     public float multiplier;
     public Text scoreText;
     int displayScore;
+    public int coins;
 
 	// Use this for initialization
 	void Start () {
-        //DontDestroyOnLoad(this);
-        //displayScore = 0;
+        //scoreText.
+
 	}
 	
 	// Update is called once per frame

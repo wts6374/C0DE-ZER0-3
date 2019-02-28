@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - Ground
   - Spike
+  - SlowAbility
+  - coinMagnet
   layers:
   - Default
   - TransparentFX

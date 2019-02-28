@@ -53,14 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\coinMagnet.cs" />
      <Compile Include="Assets\Scripts\Collect.cs" />
      <Compile Include="Assets\Scripts\loopThings.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\MySceneManager.cs" />
      <Compile Include="Assets\Scripts\playerBox.cs" />
+     <Compile Include="Assets\Scripts\PowerUp.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Singleton.cs" />
+     <Compile Include="Assets\Scripts\SlowDown.cs" />
      <Compile Include="Assets\Scripts\TapJump.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/abtjk/Documents/platformer/PlatformGrav/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

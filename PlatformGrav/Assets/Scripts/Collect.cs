@@ -23,7 +23,23 @@ public class Collect : MonoBehaviour
         {
             other.gameObject.gameObject.GetComponent<playerBox>().score += 40;
             MySceneManager.Instance.multiplier += .1f;
-            Destroy(gameObject);
+            MySceneManager.Instance.coins++;
+            Debug.Log(gameObject.tag);
+            if (gameObject.tag == "SlowAbility")
+            {
+                gameObject.GetComponent<SlowDown>().isActive = true;
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
+			if (gameObject.tag == "coinMagnet") {
+				Debug.Log ("Sdfd");
+				gameObject.GetComponent<coinMagnet>().isActive = true;
+				gameObject.GetComponent<SpriteRenderer>().enabled = false;
+			}
+            else
+            {
+                Destroy(gameObject);
+            }
+            
             
         }
     }
