@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Collect.cs" />
+    <Compile Include="Assets\Scripts\Gamoverscore.cs" />
     <Compile Include="Assets\Scripts\loopThings.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />

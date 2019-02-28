@@ -8,9 +8,9 @@ public class Move : MonoBehaviour {
     public bool stop;
     public static float SPEED;
     public float speed;
-
     public GameObject createThings;
-
+    private playerBox PlayerBox;
+    public GameObject ScoreManager;
 	void Start () {
         if (SPEED == 0)
         {
@@ -19,6 +19,7 @@ public class Move : MonoBehaviour {
 
         speed = SPEED;
         createThings = GameObject.Find("TriggerLoop");
+        ScoreManager = GameObject.FindGameObjectWithTag("ScoreManager");
 	}
 	
 	// Update is called once per frame
@@ -40,6 +41,7 @@ public class Move : MonoBehaviour {
         {
             if (other.GetComponent<playerBox>())
             {
+                ScoreManager.GetComponent<ScoreManager>().Gameover();
                 GameObject ending = GameObject.Find("Player");
                 ending.GetComponent<Menu>().Menuetwo();
             }

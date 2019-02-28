@@ -111,3 +111,4 @@ MonoBehaviour:
   stop: 0
   speed: 0
   createThings: {fileID: 0}
+  Player: {fileID: 1114510701845378, guid: c3a800fc733f8094d8bf2b2af8906980, type: 2}

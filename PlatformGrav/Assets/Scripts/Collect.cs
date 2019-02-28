@@ -21,7 +21,7 @@ public class Collect : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.gameObject.GetComponent<playerBox>().score += 40;
+            other.gameObject.gameObject.GetComponent<playerBox>().score += 10;
             MySceneManager.Instance.multiplier += .1f;
             MySceneManager.Instance.coins++;
             Debug.Log(gameObject.tag);

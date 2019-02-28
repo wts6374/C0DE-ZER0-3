@@ -14,6 +14,7 @@ public class playerBox : MonoBehaviour
     public float score;
     public bool magnet = false;
     public Text scoreText;
+    public float finalscore;
     public Text winText;
     public float timer = 0.0f;
     public GameObject endScreen;
@@ -133,6 +134,7 @@ public class playerBox : MonoBehaviour
     {
         MySceneManager.Instance.score += .05f;
     }
+
 }
 
 

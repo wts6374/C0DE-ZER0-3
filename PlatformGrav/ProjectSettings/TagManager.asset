@@ -11,6 +11,7 @@ TagManager:
   - SlowAbility
   - GroundNew
   - Mag
+  - ScoreManager
   layers:
   - Default
   - TransparentFX
