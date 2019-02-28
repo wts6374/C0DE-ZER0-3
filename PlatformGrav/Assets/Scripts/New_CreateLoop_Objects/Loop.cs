@@ -14,8 +14,9 @@ public class Loop : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        other.transform.position = new Vector2(50, 0);
+        Debug.Log("HELLO");
+        other.transform.position = new Vector2(other.transform.position.x + 200f, other.transform.position.y);
     }
 }

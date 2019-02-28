@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 29493614}
   - component: {fileID: 29493616}
   - component: {fileID: 29493618}
+  - component: {fileID: 29493617}
   m_Layer: 5
   m_Name: RemoveObjects
   m_TagString: Untagged
@@ -270,6 +271,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88dfad8a3b5b28041b5b6b8c471d8184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &29493617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29493612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2a3ff0bbaa15b4c828f8ff5b2e84b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &29493618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -279,7 +291,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2083,7 +2095,7 @@ GameObject:
   - component: {fileID: 1423806701}
   m_Layer: 5
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

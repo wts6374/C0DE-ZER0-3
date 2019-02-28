@@ -12,7 +12,7 @@ public class Move : MonoBehaviour {
     public GameObject createThings;
 
 	void Start () {
-        if (SPEED == 0)
+        if (SPEED < 20)
         {
             SPEED = 20f;
         }
