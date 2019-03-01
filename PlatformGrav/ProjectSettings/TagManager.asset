@@ -11,6 +11,7 @@ TagManager:
   - SlowAbility
   - GroundNew
   - Mag
+  - RainCoin
   layers:
   - Default
   - TransparentFX

@@ -76,7 +76,7 @@ public class playerBox : MonoBehaviour
         //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
         //}
 
-        cam.transform.position = new Vector3(this.transform.position.x+15, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        cam.transform.position = new Vector3(this.transform.position.x+10, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
 
         endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, endScreen.transform.position.z);
 
