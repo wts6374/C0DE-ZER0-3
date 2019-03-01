@@ -22,11 +22,11 @@ public class LooperBox : MonoBehaviour {
             Physics2D.gravity = new Vector2(0, -50f);
             other.gameObject.GetComponent<MainMenu>().Menuetwo();
         }
-        else
-        {
-            Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
-            other.gameObject.transform.position = new Vector2(looping.x + other.gameObject.GetComponent<Transform>().localScale.x / 2f, transform.position.y);
-        }
+        //else
+        //{
+        //    Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
+        //    other.gameObject.transform.position = new Vector2(looping.x + other.gameObject.GetComponent<Transform>().localScale.x / 2f, transform.position.y);
+        //}
     }
 
 

@@ -14,9 +14,9 @@ public class Loop : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("HELLO");
-        other.transform.position = new Vector2(other.transform.position.x + 200f, other.transform.position.y);
+        Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
+        other.gameObject.transform.position = new Vector2(looping.x, other.transform.position.y);
     }
 }
