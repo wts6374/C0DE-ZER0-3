@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23461511608276560}
   - component: {fileID: 114001253959022918}
   - component: {fileID: 61581986999611292}
+  - component: {fileID: 114943127832196948}
   m_Layer: 0
   m_Name: Ground
   m_TagString: GroundNew
@@ -124,3 +125,14 @@ MonoBehaviour:
   stop: 0
   speed: 0
   createThings: {fileID: 0}
+--- !u!114 &114943127832196948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118183688883002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e592105276f67de4eb0ea63dc349cabb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
