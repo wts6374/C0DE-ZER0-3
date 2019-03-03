@@ -22,19 +22,19 @@ public class SpawnObjects : MonoBehaviour {
 
         Vector2 looping = GetComponent<RectTransform>().position;
         //gameObject.transform.position = new Vector2(looping.x, transform.position.y);
-        width = 100f;
-        height = 4f;
+        width = 400f;
+        height = 3.5f;
 
         centerX = GetComponent<RectTransform>().position.x;
         objects = new List<GameObject>();
 
-        for (int x = 0; x < 30; x++)
+        for (int x = 0; x < 10; x++)
             objects.Add(SpawningObjects());
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		for(int x = 0; x < 30; x++)
+	void FixedUpdate () {
+		for(int x = 0; x < 5; x++)
         {
             if (objects[x] == null)
             {
@@ -46,22 +46,39 @@ public class SpawnObjects : MonoBehaviour {
 
     GameObject SpawningObjects()
     {
-        int num = Random.Range(0, 5);
+        int num = Random.Range(1, 100);
 
         GameObject temp = null;
 
-        if (num == 0)
-            temp = Instantiate(spike, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 1)
-            temp = Instantiate(coin, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 2)
-            temp = Instantiate(ground, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 3)
-            temp = Instantiate(slow, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 4)
-            temp = Instantiate(mag, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
+        if (num > 49 && num < 65)
+        {
+            //spike
+            temp = Instantiate(spike, new Vector3(Random.Range(-60, 0), 0 + Random.Range(-height, height), -1), Quaternion.identity);
+        }
+        else if (num > 24 && num < 50)
+        {
+            //coin
+            temp = Instantiate(coin, new Vector3(Random.Range(-60, 0), 0 + Random.Range(-height, height), -1), Quaternion.identity);
+        }
+        else if (num > 0 && num < 25)
+        {
+            //ground
+            temp = Instantiate(ground, new Vector3(Random.Range(-60, 0), 0 + Random.Range(-height, height), -1), Quaternion.identity);
+        }
+        else if (num > 64 && num < 80)
+        {
+            //slow power up
+            temp = Instantiate(slow, new Vector3(Random.Range(-60, 0), 0 + Random.Range(-height, height), -1), Quaternion.identity);
+        }
+        else if (num > 79 && num < 101)
+        {
+            //coin magnet power up
+            temp = Instantiate(mag, new Vector3(Random.Range(-60, 0), 0 + Random.Range(-height, height), -1), Quaternion.identity);
+        }
 
         return temp;
         
     }
+
+
 }
