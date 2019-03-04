@@ -57,7 +57,7 @@ public class Collect : MonoBehaviour
         {
 
             Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
-            Debug.Log(transform.position.y);
+            //Debug.Log(transform.position.y);
             gameObject.transform.position = new Vector2(looping.x, transform.position.y);
         }
     }

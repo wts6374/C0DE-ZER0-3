@@ -224,7 +224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25.189001}
   m_AnchorMin: {x: 1, y: 0.4}
   m_AnchorMax: {x: 1, y: 0.8}
-  m_AnchoredPosition: {x: -978, y: -65}
+  m_AnchoredPosition: {x: -1009, y: -49}
   m_SizeDelta: {x: 101.4, y: 240.01}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &29493614
@@ -720,7 +720,6 @@ GameObject:
   - component: {fileID: 483141163}
   - component: {fileID: 483141165}
   - component: {fileID: 483141164}
-  - component: {fileID: 483141166}
   m_Layer: 5
   m_Name: GameWorld
   m_TagString: Untagged
@@ -785,36 +784,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 483141162}
   m_CullTransparentMesh: 0
---- !u!114 &483141166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 483141162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1423806700}
-          m_MethodName: ClickInput
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,7 +2081,6 @@ GameObject:
   - component: {fileID: 1423806697}
   - component: {fileID: 1423806698}
   - component: {fileID: 1423806699}
-  - component: {fileID: 1423806700}
   - component: {fileID: 1423806702}
   - component: {fileID: 1423806701}
   m_Layer: 5
@@ -2231,17 +2199,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.14}
   m_EdgeRadius: 0
---- !u!114 &1423806700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1423806695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d5ff27c4d1e8d46a2d095f0a10b860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1423806701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2756,6 +2713,7 @@ GameObject:
   - component: {fileID: 2131313719}
   - component: {fileID: 2131313718}
   - component: {fileID: 2131313717}
+  - component: {fileID: 2131313721}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2843,3 +2801,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2131313721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131313716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d5ff27c4d1e8d46a2d095f0a10b860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

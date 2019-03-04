@@ -22,17 +22,20 @@ public class TapJump : MonoBehaviour {
     public void TouchInput()
     {
         //Debug.Log(Input.touches.Length);
-        if(Input.touches.Length == 1)
-            if(Input.touches[0].phase == TouchPhase.Began)
+        for(int x = 0; x < Input.touches.Length; x++)
+        {
+            if (Input.touches[x].phase == TouchPhase.Began)
             {
-               
 
                 // reverse gravity
                 Physics2D.gravity = -(Physics2D.gravity);
-
+                Debug.Log("gravity");
+                Debug.Log(Physics2D.gravity);
                 // zero out velocity
                 player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             }
+        }
+        
         
     
     }

@@ -38,7 +38,7 @@ public class SpawnObjects : MonoBehaviour {
         {
             if (objects[x] == null)
             {
-                Debug.Log("Missing: " + x);
+                //Debug.Log("Missing: " + x);
                 objects[x] = SpawningObjects();
             }
         }
