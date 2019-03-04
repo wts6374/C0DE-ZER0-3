@@ -16,7 +16,15 @@ public class Loop : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
-        other.gameObject.transform.position = new Vector2(looping.x, other.transform.position.y);
+        if (other.gameObject.tag == "GroundNew" || other.gameObject.tag == "Spike")
+        {
+            Destroy(other.gameObject);
+   
+        }
+        else
+        {
+            Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
+            other.gameObject.transform.position = new Vector2(looping.x, other.transform.position.y);
+        }
     }
 }

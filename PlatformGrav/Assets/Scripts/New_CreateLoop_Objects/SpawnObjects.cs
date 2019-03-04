@@ -22,7 +22,7 @@ public class SpawnObjects : MonoBehaviour {
 
         Vector2 looping = GetComponent<RectTransform>().position;
         //gameObject.transform.position = new Vector2(looping.x, transform.position.y);
-        width = 100f;
+        width = 500f;
         height = 4f;
 
         centerX = GetComponent<RectTransform>().position.x;
