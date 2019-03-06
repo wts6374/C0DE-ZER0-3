@@ -24,6 +24,12 @@ public class Collect : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.transform.position = new Vector2(-100, -100);
             }
+            else if (gameObject.tag == "RainCoin")
+            {
+                gameObject.GetComponent<RainCoin>().isActive = true;
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.transform.position = new Vector2(-100, -100);
+            }
             else if (gameObject.tag == "Coin")
             {
 

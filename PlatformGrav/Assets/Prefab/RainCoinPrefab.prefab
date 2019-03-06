@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212485665187836000}
   - component: {fileID: 114476443942331534}
   - component: {fileID: 114617671900971796}
-  - component: {fileID: 136625724587744348}
-  - component: {fileID: 114589563393859550}
+  - component: {fileID: 114768787385522662}
+  - component: {fileID: 70371046322935938}
   m_Layer: 0
   m_Name: RainCoinPrefab
   m_TagString: RainCoin
@@ -44,6 +44,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &70371046322935938
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796573000615634}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.16, y: 0.16}
+  m_Direction: 0
 --- !u!114 &114476443942331534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,22 +70,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e592105276f67de4eb0ea63dc349cabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114589563393859550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796573000615634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ded086b3ad40f4c9494665a616718c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 30
-  isActive: 0
-  coinPrefab: {fileID: 1491064387491936, guid: e99e320059b3bb84384ea5782c2b0e35, type: 2}
-  rainCoinPrefab: {fileID: 0}
-  playerPos: {x: 0, y: 0}
 --- !u!114 &114617671900971796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,19 +84,22 @@ MonoBehaviour:
   stop: 0
   speed: 0
   createThings: {fileID: 0}
---- !u!136 &136625724587744348
-CapsuleCollider:
+--- !u!114 &114768787385522662
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796573000615634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.071894646
-  m_Height: 0.8063084
-  m_Direction: 2
-  m_Center: {x: 0.00009441376, y: -0.000000023841858, z: -0.11940127}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a290ee9e7a6de214b8a9807ba838feec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 5
+  isActive: 0
+  coinPrefab: {fileID: 1491064387491936, guid: e99e320059b3bb84384ea5782c2b0e35, type: 2}
+  rainCoinPrefab: {fileID: 1796573000615634}
+  playerPos: {x: 0, y: 0}
 --- !u!212 &212485665187836000
 SpriteRenderer:
   m_ObjectHideFlags: 1
