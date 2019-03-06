@@ -22,7 +22,7 @@ public class SpawnObjects : MonoBehaviour {
 
         Vector2 looping = GetComponent<RectTransform>().position;
         //gameObject.transform.position = new Vector2(looping.x, transform.position.y);
-        width = 500f;
+        width = 200f;
         height = 4f;
 
         centerX = GetComponent<RectTransform>().position.x;
@@ -46,19 +46,19 @@ public class SpawnObjects : MonoBehaviour {
 
     GameObject SpawningObjects()
     {
-        int num = Random.Range(0, 5);
+        int num = Random.Range(0, 11);
 
         GameObject temp = null;
 
-        if (num == 0)
+        if (num < 2)
             temp = Instantiate(spike, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 1)
+        else if (num >= 2 && num < 7)
             temp = Instantiate(coin, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 2)
+        else if (num >= 7 && num < 9)
             temp = Instantiate(ground, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 3)
+        else if (num == 9)
             temp = Instantiate(slow, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 4)
+        else if (num == 10)
             temp = Instantiate(mag, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
 
         return temp;
