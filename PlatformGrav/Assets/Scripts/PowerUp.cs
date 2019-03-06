@@ -9,7 +9,7 @@ public abstract class PowerUp : MonoBehaviour {
     
 
     // Use this for initialization
-    public void Start()
+    public virtual void Start()
     {
         isActive = false;
     }
