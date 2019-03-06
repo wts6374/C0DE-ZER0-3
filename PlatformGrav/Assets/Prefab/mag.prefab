@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114296882253817770}
   m_Layer: 0
   m_Name: mag
-  m_TagString: Untagged
+  m_TagString: Mag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stop: 0
+  speed: 0
+  createThings: {fileID: 0}
 --- !u!135 &135065263455551132
 SphereCollider:
   m_ObjectHideFlags: 1

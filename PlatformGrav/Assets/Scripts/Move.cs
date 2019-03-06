@@ -8,6 +8,9 @@ public class Move : MonoBehaviour {
     public bool stop;
     public static float SPEED;
     public float speed;
+
+    public GameObject createThings;
+
 	void Start () {
         if (SPEED == 0)
         {
@@ -23,9 +26,10 @@ public class Move : MonoBehaviour {
         speed = SPEED;
         transform.Translate(Vector3.left * SPEED * Time.deltaTime);
 
-        if(transform.position.x<=-200f)
+        if(transform.position.x<=-220f)
         {
-            transform.position = new Vector3(575f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(545f, transform.position.y, transform.position.z);
+            createThings.gameObject.GetComponent<loopThings>().create = true;
         }
   
     }

@@ -30,11 +30,11 @@ public class Collect : MonoBehaviour
                 gameObject.GetComponent<SlowDown>().isActive = true;
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
-			if (gameObject.tag == "coinMagnet") {
-				Debug.Log ("Sdfd");
-				gameObject.GetComponent<coinMagnet>().isActive = true;
-				gameObject.GetComponent<SpriteRenderer>().enabled = false;
-			}
+            else if (gameObject.tag == "RainCoin")
+            {
+                gameObject.GetComponent<RainCoin>().isActive = true;
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
             else
             {
                 Destroy(gameObject);

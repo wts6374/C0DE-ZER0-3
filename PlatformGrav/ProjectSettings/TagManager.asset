@@ -9,7 +9,9 @@ TagManager:
   - Ground
   - Spike
   - SlowAbility
-  - coinMagnet
+  - GroundNew
+  - Mag
+  - RainCoin
   layers:
   - Default
   - TransparentFX
