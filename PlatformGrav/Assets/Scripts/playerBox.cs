@@ -11,24 +11,19 @@ public class playerBox : MonoBehaviour
     public bool stop = false;
     public Camera cam;
     public Rigidbody rb;
-    public float score;
     public bool magnet = false;
-    public Text scoreText;
-    public Text winText;
     public float timer = 0.0f;
     public GameObject endScreen;
 
     void Start()
     {
-        score = 0;
         //Camera.main.transform.position.x = gameObject.transform.position.x + 2;
         stop = false;
         jump = false;
         //magnet = true;
-        winText.text = "";
 
-        endScreen.SetActive(false);
-        Physics.gravity = new Vector3(0, -50, 0);
+        //endScreen.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -37,7 +32,7 @@ public class playerBox : MonoBehaviour
 
 
 
-        /*RaycastHit hit;
+        RaycastHit hit;
         if (magnet == true)
         {
             if (Physics.SphereCast(transform.position, 10, Vector3.right, out hit, 10))
@@ -54,7 +49,7 @@ public class playerBox : MonoBehaviour
                 magnet = false;
                 timer = 0;
             }
-        }*/
+        }
 
         //scoreText.text = "Score: " + score.ToString();
 
@@ -76,58 +71,65 @@ public class playerBox : MonoBehaviour
         //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
         //}
 
-        cam.transform.position = new Vector3(this.transform.position.x+10, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        //cam.transform.position = new Vector3(this.transform.position.x+15, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
 
-        endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, endScreen.transform.position.z);
-
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            jump = true;
-        }
-
-        if (other.gameObject.tag == "End")
-        {
-            stop = true;
-            winText.text = "You Win!!!!";
-            Destroy(rb.gameObject);
-            endScreen.SetActive(true);
-        }
-
-        if (other.gameObject.name.Contains("Spike"))
-        {
-            //stop = true;
-            //winText.color = Color.red;
-            //winText.text = "You Lose";
-            //Destroy(rb.gameObject);
-            //endScreen.SetActive(true);
-            MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
-            MySceneManager.Instance.score = 0;
-            MySceneManager.Instance.coins = 0;
-            MySceneManager.Instance.multiplier = 0;
-            //Physics.gravity = new Vector3(0, -50, 0);
-            this.GetComponent<MainMenu>().Menuetwo();
-        }
-
-        if (other.gameObject.tag == "Coin")
-        {
-            //Destroy(other.gameObject);
-
-            //plus 40 to score if you pick up a coin
-            //score += 40;
-        }
-
-        if (other.gameObject.tag == "mag")
-        {
-			Debug.Log ("thoi");
-            //Destroy(other.gameObject);
-            //magnet = true;
-        }
+        //endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, endScreen.transform.position.z);
 
     }
+
+    //void OnCollisionEnter2D(Collision2D other)
+    //{
+    //    //if (other.gameObject.tag == "Ground")
+    //    //{
+    //    //    jump = true;
+    //    //}
+
+    //    //if (other.gameObject.tag == "End")
+    //    //{
+    //    //    stop = true;
+    //    //    winText.text = "You Win!!!!";
+    //    //    Destroy(rb.gameObject);
+    //    //    endScreen.SetActive(true);
+    //    //}
+
+    //    if (other.gameObject.name.Contains("Spike"))
+    //    {
+    //        //stop = true;
+    //        //winText.color = Color.red;
+    //        //winText.text = "You Lose";
+    //        //Destroy(rb.gameObject);
+    //        //endScreen.SetActive(true);
+    //        MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
+    //        MySceneManager.Instance.score = 0;
+    //        MySceneManager.Instance.coins = 0;
+    //        MySceneManager.Instance.multiplier = 0;
+    //        //Physics.gravity = new Vector3(0, -50, 0);
+    //        Physics2D.gravity = new Vector2(0, -50f);
+    //        GetComponent<MainMenu>().Menuetwo();
+    //    }
+
+    //    if (other.gameObject.tag == "Coin")
+    //    {
+    //        Destroy(other.gameObject);
+
+    //        // plus 40 to score if you pick up a coin
+    //        MySceneManager.Instance.score += 40;
+    //    }
+
+    //    if (other.gameObject.tag == "Mag")
+    //    {
+    //        Destroy(other.gameObject);
+    //        magnet = true;
+    //    }
+
+    //    if(other.gameObject.tag == "SlowAbility")
+    //    {
+    //        other.gameObject.GetComponent<SlowDown>().isActive = true;
+    //        other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+    //        other.gameObject.transform.position = new Vector2(-100, -100);
+    //    }
+
+    //}
 
     //fixed update makes score incrment every second by 1
     void FixedUpdate()
