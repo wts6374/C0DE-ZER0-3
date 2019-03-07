@@ -30,6 +30,15 @@ public class RainCoin : PowerUp {
                     Random.Range(playerPos.y + 9, playerPos.y + 20)), Quaternion.identity);
 
             }
+            else if (duration < 3)
+            {
+                GameObject[] objs = GameObject.FindGameObjectsWithTag("Coin");
+
+                foreach (GameObject g in objs)
+                {
+                    Destroy(g, 3);
+                }
+            }
 
             RAINING = true;
 
@@ -37,6 +46,7 @@ public class RainCoin : PowerUp {
         else
         {
             RAINING = false;
+            
         }
 	}
 

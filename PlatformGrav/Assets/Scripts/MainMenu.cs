@@ -20,7 +20,35 @@ public class MainMenu : MonoBehaviour {
     }
     public void Menuetwo()
     {
+        object[] obj = FindObjectsOfType(typeof(GameObject));
+        foreach (object o in obj)
+        {
+            GameObject g = (GameObject)o;
+            if (g.GetComponent<SlowDown>() != null)
+            {
+                if (g.GetComponent<SlowDown>().isActive)
+                {
+                    g.GetComponent<SlowDown>().isActive = false;
+                }
+            }
+            if (g.GetComponent<RainCoin>() != null)
+            {
+                if (g.GetComponent<RainCoin>().isActive)
+                {
+                    g.GetComponent<RainCoin>().isActive = false;
+                }
+            }
+            if (g.GetComponent<coinMagnet>() != null)
+            {
+                if (g.GetComponent<coinMagnet>().isActive)
+                {
+                    g.GetComponent<coinMagnet>().isActive = false;
+                }
+            }
+
+        }
         SceneManager.LoadScene(3);
+        
     }
     public void Playtwo()
     {
