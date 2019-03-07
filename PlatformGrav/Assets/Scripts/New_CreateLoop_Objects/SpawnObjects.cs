@@ -59,7 +59,7 @@ public class SpawnObjects : MonoBehaviour {
 
 
         
-        temp = Instantiate(rain, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
+       // temp = Instantiate(rain, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
 
 
 
