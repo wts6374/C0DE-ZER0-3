@@ -19,6 +19,7 @@ public class SlowDown : PowerUp {
             Move.SPEED = 20f;
             //Destroy(gameObject);
             isActive = !isActive;
+            Destroy(this);
 
         }
       
@@ -32,9 +33,8 @@ public class SlowDown : PowerUp {
         {
             MySceneManager.Instance.coins -= 20;
             MySceneManager.Instance.multiplier -= (.1f * 20.0f);
-            
+            duration = 5;
+            isActive = !isActive;
         }
-
-        isActive = !isActive;
     }
 }

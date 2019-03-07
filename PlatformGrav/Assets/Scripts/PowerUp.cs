@@ -23,7 +23,6 @@ public abstract class PowerUp : MonoBehaviour {
             if (duration < 0)
             {
                 isActive = false;
-                Destroy(gameObject);
                 
             }
         }
