@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114296882253817770}
   - component: {fileID: 70819748509274912}
   - component: {fileID: 114307069144418292}
+  - component: {fileID: 114156554436830986}
   m_Layer: 0
   m_Name: mag
   m_TagString: Mag
@@ -58,6 +59,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.16, y: 0.16}
   m_Direction: 0
+--- !u!114 &114156554436830986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1957704952909282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785a9e3f2fe499845a9664973ad6440f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0
+  isActive: 0
 --- !u!114 &114296882253817770
 MonoBehaviour:
   m_ObjectHideFlags: 1
