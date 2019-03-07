@@ -1509,6 +1509,7 @@ MonoBehaviour:
   ground: {fileID: 1118183688883002, guid: aa967eb4b79c28c458bbfb0b95bdc3f0, type: 2}
   slow: {fileID: 1798636536404382, guid: d51c2da9059201147899bb715bda4771, type: 2}
   mag: {fileID: 1957704952909282, guid: a0cb4992677127141b6d54fc73cdc65f, type: 2}
+  rain: {fileID: 1796573000615634, guid: af781c6a7b1f044419d72e149150c7d3, type: 2}
   objects: []
 --- !u!1 &775897720
 GameObject:

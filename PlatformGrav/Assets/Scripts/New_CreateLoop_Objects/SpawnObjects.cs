@@ -9,6 +9,7 @@ public class SpawnObjects : MonoBehaviour {
     public GameObject ground;
     public GameObject slow;
     public GameObject mag;
+    public GameObject rain;
 
     public List<GameObject> objects;
 
@@ -29,7 +30,9 @@ public class SpawnObjects : MonoBehaviour {
         objects = new List<GameObject>();
 
         for (int x = 0; x < 30; x++)
+        {
             objects.Add(SpawningObjects());
+        }
 	}
 	
 	// Update is called once per frame
@@ -46,19 +49,21 @@ public class SpawnObjects : MonoBehaviour {
 
     GameObject SpawningObjects()
     {
-        int num = Random.Range(0, 11);
+        int num = Random.Range(0, 21);
 
         GameObject temp = null;
 
-        if (num < 2)
+        if (num > 11 && num < 15)
             temp = Instantiate(spike, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num >= 2 && num < 7)
+        else if (num > 0 && num < 12)
             temp = Instantiate(coin, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num >= 7 && num < 9)
+        else if (num > 14 && num < 18)
             temp = Instantiate(ground, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 9)
+        else if (num == 18)
+            temp = Instantiate(rain, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
+        else if (num == 19)
             temp = Instantiate(slow, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 10)
+        else if (num == 20)
             temp = Instantiate(mag, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
 
         return temp;

@@ -731,7 +731,6 @@ C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.ScreenCaptureModule.dll
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SharedInternalsModule.dll
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
-C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpriteMaskModule.dll
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpriteShapeModule.dll
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.StandardEvents.dll
@@ -809,7 +808,6 @@ C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.ProfilerModule.xml
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.ScreenCaptureModule.xml
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SharedInternalsModule.xml
-C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpriteMaskModule.xml
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.SpriteShapeModule.xml
 C:\Users\Elliot Privateer\Desktop\Repositories\GravityMoe\PlatformGrav\Temp\bin\Debug\UnityEngine.StreamingModule.xml
