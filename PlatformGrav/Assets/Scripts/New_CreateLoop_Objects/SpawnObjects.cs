@@ -24,7 +24,7 @@ public class SpawnObjects : MonoBehaviour {
         Vector2 looping = GetComponent<RectTransform>().position;
         //gameObject.transform.position = new Vector2(looping.x, transform.position.y);
         width = 200f;
-        height = 3.5f;
+        height = 3.2f;
 
         centerX = GetComponent<RectTransform>().position.x;
         objects = new List<GameObject>();

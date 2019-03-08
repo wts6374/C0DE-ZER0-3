@@ -30,7 +30,8 @@ public class RainCoin : PowerUp {
                     Random.Range(playerPos.y + 9, playerPos.y + 20)), Quaternion.identity);
 
             }
-            else if (duration < 3)
+
+            if (duration < 3)
             {
                 GameObject[] objs = GameObject.FindGameObjectsWithTag("Coin");
 

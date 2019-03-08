@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a290ee9e7a6de214b8a9807ba838feec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 8
+  duration: 5
   isActive: 0
   coinPrefab: {fileID: 1491064387491936, guid: e99e320059b3bb84384ea5782c2b0e35, type: 2}
   rainCoinPrefab: {fileID: 1796573000615634}
